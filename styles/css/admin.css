@@ -1024,7 +1024,7 @@ ul.dropdown-menu li a:hover {
   padding: 0;
 }
 
-.table_part table tbody tr td .dropdown_part span {
+/* .table_part table tbody tr td .dropdown_part span {
   color: var(--bg_color);
   font-weight: 600;
   border: 1px solid var(--border_color);
@@ -1032,7 +1032,16 @@ ul.dropdown-menu li a:hover {
   padding: 2px 10px;
   border-radius: 5px;
   max-width: 100px;
-}
+} */
+/* .table_part table tbody tr td .dropdown_part {
+  color: var(--bg_color);
+  font-weight: 600;
+  border: 1px solid var(--border_color);
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 5px;
+  max-width: 100px;
+} */
 
 .table_part table tbody tr td .dropdown_part .arrow {
   background: none;
@@ -1096,6 +1105,9 @@ ul.dropdown-menu li a:hover {
   margin-right: 20px !important;
   width: 207px;
 }
+#ClientList.Admin .dropdown_part {
+  width: 207px;
+}
 
 #ClientList.Admin .FilterBy .FilterBy_item:last-child {
   margin-right: 20px !important;
@@ -1111,6 +1123,9 @@ ul.dropdown-menu li a:hover {
 .Admin .dropdown_part .arrow {
   box-shadow: none;
   background: #fff;
+}
+.reactSelectBody {
+  width: 110px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
