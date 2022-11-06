@@ -1,6 +1,6 @@
-import ClientList from "../../Components/Add_categort/ClientList";
-import MenuBar from "../../Components/Dashboard/MenuBar";
+import MenuBar from "../../Components/Dashboard/Dashboard/MenuBar";
 import MasterLayout from "../../MasterLayout/MasterLayout";
+
 
 const index = () => {
   return (

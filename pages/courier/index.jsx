@@ -1,5 +1,5 @@
-import Courier_part from "../../Components/Courier/Courier_part";
-import MenuBar from "../../Components/Dashboard/MenuBar";
+import Courier_part from "../../Components/Dashboard/Courier/Courier_part";
+import MenuBar from "../../Components/Dashboard/Dashboard/MenuBar";
 import MasterLayout from "../../MasterLayout/MasterLayout";
 
 const index = () => {

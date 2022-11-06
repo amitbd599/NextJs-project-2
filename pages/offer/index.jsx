@@ -1,6 +1,7 @@
-import MenuBar from "../../Components/Dashboard/MenuBar";
-import Customers_offer from "../../Components/Offer/Customers_offer";
+import MenuBar from "../../Components/Dashboard/Dashboard/MenuBar";
+import Customers_offer from "../../Components/Dashboard/Offer/Customers_offer";
 import MasterLayout from "../../MasterLayout/MasterLayout";
+
 
 const index = () => {
   return (

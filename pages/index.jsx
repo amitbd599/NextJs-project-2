@@ -1,10 +1,8 @@
 import { Fragment } from "react";
-import SideBar from "../Components/Dashboard/SideBar";
+import AdminBanner from "../Components/Dashboard/Dashboard/AdminBanner";
+import TotalLead from "../Components/Dashboard/Dashboard/TotalLead";
 import MasterLayout from "../MasterLayout/MasterLayout";
-import MenuBar from "../Components/Dashboard/MenuBar";
-import AdminBanner from "../Components/Dashboard/AdminBanner";
-import TotalLead from "../Components/Dashboard/TotalLead";
-import ChartJs from "../Components/Dashboard/ChartJs";
+
 const index = () => {
   return (
     <Fragment>

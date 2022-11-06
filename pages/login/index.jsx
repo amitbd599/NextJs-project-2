@@ -1,4 +1,4 @@
-import Login_Part from "../../Components/Login/Login_Part";
+import Login_Part from "../../Components/Dashboard/Login/Login_Part";
 
 const index = () => {
   return (

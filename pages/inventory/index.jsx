@@ -1,5 +1,5 @@
-import MenuBar from "../../Components/Dashboard/MenuBar";
-import Inventory_Part from "../../Components/Inventory/Inventory_Part";
+import MenuBar from "../../Components/Dashboard/Dashboard/MenuBar";
+import Inventory_Part from "../../Components/Dashboard/Inventory/Inventory_Part";
 import MasterLayout from "../../MasterLayout/MasterLayout";
 
 const index = () => {
