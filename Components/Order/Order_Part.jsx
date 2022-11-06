@@ -1,4 +1,11 @@
+import { Tab, Tabs } from "react-bootstrap";
+import Select from "react-select";
 const Order_Part = () => {
+  const options = [
+    { value: "Name", label: "Name" },
+    { value: "Time", label: "Time" },
+    { value: "Date", label: "Date" },
+  ];
   return (
     <>
       <div class='section_gaps'></div>
@@ -35,127 +42,109 @@ const Order_Part = () => {
                 {/* Filter By Item */}
                 <div className='FilterBy_item d_flex'>
                   <h3>Filter By:</h3>
-                  <div className='dropdown_part'>
-                    <span
-                      className='dropdown-toggle d_flex'
-                      id='dropdownMenuButton1'
-                      data-bs-toggle='dropdown'
-                      aria-expanded='false'
-                    >
-                      Joining Date
-                      <div className='arrow'>
-                        <svg
-                          width={11}
-                          height={6}
-                          viewBox='0 0 11 6'
-                          fill='none'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            d='M0.244629 0.501221L5.40989 5.66649L10.5752 0.501221H0.244629Z'
-                            fill='#747474'
-                          />
-                        </svg>
-                      </div>
-                    </span>
-                    <ul
-                      className='dropdown-menu'
-                      aria-labelledby='dropdownMenuButton1'
-                    >
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Another action
-                        </a>
-                      </li>
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Something else here
-                        </a>
-                      </li>
-                      {/* up arrow */}
-                      <div className='up_arrow'>
-                        <svg
-                          width={11}
-                          height={6}
-                          viewBox='0 0 11 6'
-                          fill='none'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            d='M10.3306 5.16528L5.1653 1.6953e-05L3.48091e-05 5.16528L10.3306 5.16528Z'
-                            fill='#F3ECFF'
-                          />
-                        </svg>
-                      </div>
-                    </ul>
+                  <div className='reactSelectBody'>
+                    <Select
+                      className='select__color'
+                      defaultValue={options[0]}
+                      options={options}
+                      styles={{
+                        option: (provided, state) => ({
+                          ...provided,
+                          borderBottom: "1px solid #ddd",
+                          color: state.isSelected ? "#fff" : "#666",
+                          background: state.isSelected ? "#556FF6" : "#fff",
+                          cursor: "pointer",
+                          margin: "0px",
+                          ":active": {
+                            backgroundColor: "#ddd",
+                            cursor: "pointer",
+                          },
+                        }),
+                        singleValue: (provided, state) => ({
+                          ...provided,
+                          color: "#fff",
+
+                          fontSize: "15px",
+                        }),
+                        control: (styles) => ({
+                          ...styles,
+                          backgroundColor: "#556FF6",
+                          padding: "3px 0px",
+                          margin: "0px 0px",
+                          border: "none",
+
+                          ":focus-within": {
+                            ...styles[":focus-within"],
+                            border: "none",
+                            boxShadow: "none",
+                          },
+                        }),
+                        menuList: (styles) => ({
+                          ...styles,
+                          margin: "0px",
+                          padding: "0px",
+                        }),
+                        noOptionsMessage: (styles) => ({
+                          ...styles,
+                          background: "red",
+                          color: "#fff",
+                        }),
+                      }}
+                    />
                   </div>
                 </div>
                 {/* Filter By Item */}
                 <div className='FilterBy_item d_flex'>
                   <h3>Filter By:</h3>
-                  <div className='dropdown_part'>
-                    <span
-                      className='dropdown-toggle d_flex'
-                      id='dropdownMenuButton1'
-                      data-bs-toggle='dropdown'
-                      aria-expanded='false'
-                    >
-                      Status
-                      <div className='arrow'>
-                        <svg
-                          width={11}
-                          height={6}
-                          viewBox='0 0 11 6'
-                          fill='none'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            d='M0.244629 0.501221L5.40989 5.66649L10.5752 0.501221H0.244629Z'
-                            fill='#747474'
-                          />
-                        </svg>
-                      </div>
-                    </span>
-                    <ul
-                      className='dropdown-menu'
-                      aria-labelledby='dropdownMenuButton1'
-                    >
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Action
-                        </a>
-                      </li>
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Another action
-                        </a>
-                      </li>
-                      <li>
-                        <a className='dropdown-item' href='#'>
-                          Something else here
-                        </a>
-                      </li>
-                      {/* up arrow */}
-                      <div className='up_arrow'>
-                        <svg
-                          width={11}
-                          height={6}
-                          viewBox='0 0 11 6'
-                          fill='none'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            d='M10.3306 5.16528L5.1653 1.6953e-05L3.48091e-05 5.16528L10.3306 5.16528Z'
-                            fill='#F3ECFF'
-                          />
-                        </svg>
-                      </div>
-                    </ul>
+                  <div className='reactSelectBody'>
+                    <Select
+                      className='select__color'
+                      defaultValue={options[0]}
+                      options={options}
+                      styles={{
+                        option: (provided, state) => ({
+                          ...provided,
+                          borderBottom: "1px solid #ddd",
+                          color: state.isSelected ? "#fff" : "#666",
+                          background: state.isSelected ? "#556FF6" : "#fff",
+                          cursor: "pointer",
+                          margin: "0px",
+                          ":active": {
+                            backgroundColor: "#ddd",
+                            cursor: "pointer",
+                          },
+                        }),
+                        singleValue: (provided, state) => ({
+                          ...provided,
+                          color: "#fff",
+
+                          fontSize: "15px",
+                        }),
+                        control: (styles) => ({
+                          ...styles,
+                          backgroundColor: "#556FF6",
+                          padding: "3px 0px",
+                          margin: "0px 0px",
+                          border: "none",
+
+                          ":focus-within": {
+                            ...styles[":focus-within"],
+                            border: "none",
+                            boxShadow: "none",
+                          },
+                        }),
+                        menuList: (styles) => ({
+                          ...styles,
+                          margin: "0px",
+                          padding: "0px",
+                        }),
+                        noOptionsMessage: (styles) => ({
+                          ...styles,
+                          background: "red",
+                          color: "#fff",
+                        }),
+                      }}
+                    />
                   </div>
                 </div>
                 {/* Filter By Item */}
@@ -188,107 +177,8 @@ const Order_Part = () => {
             {/* Tabs Part */}
             <div className='Order_pages_tabs'>
               {/* Tabs Part */}
-              <ul className='nav nav-pills mb-3' id='pills-tab' role='tablist'>
-                {/* All */}
-                <li className='nav-item' role='presentation'>
-                  <button
-                    className='nav-link active'
-                    id='pills-All-tab'
-                    data-bs-toggle='pill'
-                    data-bs-target='#pills-All'
-                    type='button'
-                    role='tab'
-                    aria-controls='pills-All'
-                    aria-selected='true'
-                  >
-                    All
-                  </button>
-                </li>
-                {/* Pending */}
-                <li className='nav-item' role='presentation'>
-                  <button
-                    className='nav-link'
-                    id='pills-Pending-tab'
-                    data-bs-toggle='pill'
-                    data-bs-target='#pills-Pending'
-                    type='button'
-                    role='tab'
-                    aria-controls='pills-Pending'
-                    aria-selected='false'
-                  >
-                    Pending
-                  </button>
-                </li>
-                {/* Accepted */}
-                <li className='nav-item' role='presentation'>
-                  <button
-                    className='nav-link'
-                    id='pills-Accepted-tab'
-                    data-bs-toggle='pill'
-                    data-bs-target='#pills-Accepted'
-                    type='button'
-                    role='tab'
-                    aria-controls='pills-Accepted'
-                    aria-selected='false'
-                  >
-                    Accepted
-                  </button>
-                </li>
-                {/* Shipped */}
-                <li className='nav-item' role='presentation'>
-                  <button
-                    className='nav-link'
-                    id='pills-Shipped-tab'
-                    data-bs-toggle='pill'
-                    data-bs-target='#pills-Shipped'
-                    type='button'
-                    role='tab'
-                    aria-controls='pills-Shipped'
-                    aria-selected='false'
-                  >
-                    Shipped
-                  </button>
-                </li>
-                {/* Delivered */}
-                <li className='nav-item' role='presentation'>
-                  <button
-                    className='nav-link'
-                    id='pills-Delivered-tab'
-                    data-bs-toggle='pill'
-                    data-bs-target='#pills-Delivered'
-                    type='button'
-                    role='tab'
-                    aria-controls='pills-Delivered'
-                    aria-selected='false'
-                  >
-                    Delivered
-                  </button>
-                </li>
-                {/* Other Filters */}
-                <li className='nav-item' role='presentation'>
-                  <button
-                    className='nav-link'
-                    id='pills-OtherFilters-tab'
-                    data-bs-toggle='pill'
-                    data-bs-target='#pills-OtherFilters'
-                    type='button'
-                    role='tab'
-                    aria-controls='pills-OtherFilters'
-                    aria-selected='false'
-                  >
-                    Other Filters
-                  </button>
-                </li>
-              </ul>
-              {/* Tabs Item */}
-              <div className='tab-content' id='pills-tabContent'>
-                {/* All */}
-                <div
-                  className='tab-pane fade show active'
-                  id='pills-All'
-                  role='tabpanel'
-                  aria-labelledby='pills-All-tab'
-                >
+              <Tabs defaultActiveKey='profile' id='uncontrolled-tab-example'>
+                <Tab eventKey='All' title='All'>
                   <div className='table_part'>
                     <table className='table'>
                       <tbody>
@@ -378,14 +268,8 @@ const Order_Part = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                {/* Pending */}
-                <div
-                  className='tab-pane fade'
-                  id='pills-Pending'
-                  role='tabpanel'
-                  aria-labelledby='pills-Pending-tab'
-                >
+                </Tab>
+                <Tab eventKey='Pending' title='Pending'>
                   <div className='table_part'>
                     <table className='table'>
                       <tbody>
@@ -475,14 +359,8 @@ const Order_Part = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                {/* Accepted */}
-                <div
-                  className='tab-pane fade'
-                  id='pills-Accepted'
-                  role='tabpanel'
-                  aria-labelledby='pills-Accepted-tab'
-                >
+                </Tab>
+                <Tab eventKey='Accepted' title='Accepted'>
                   <div className='table_part'>
                     <table className='table'>
                       <tbody>
@@ -572,14 +450,8 @@ const Order_Part = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                {/* Shipped */}
-                <div
-                  className='tab-pane fade'
-                  id='pills-Shipped'
-                  role='tabpanel'
-                  aria-labelledby='pills-Shipped-tab'
-                >
+                </Tab>
+                <Tab eventKey='Shipped' title='Shipped'>
                   <div className='table_part'>
                     <table className='table'>
                       <tbody>
@@ -669,14 +541,8 @@ const Order_Part = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                {/* Delivered */}
-                <div
-                  className='tab-pane fade'
-                  id='pills-Delivered'
-                  role='tabpanel'
-                  aria-labelledby='pills-Delivered-tab'
-                >
+                </Tab>
+                <Tab eventKey='Delivered' title='Delivered'>
                   <div className='table_part'>
                     <table className='table'>
                       <tbody>
@@ -766,14 +632,8 @@ const Order_Part = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
-                {/* Other Filters */}
-                <div
-                  className='tab-pane fade'
-                  id='pills-OtherFilters'
-                  role='tabpanel'
-                  aria-labelledby='pills-OtherFilters-tab'
-                >
+                </Tab>
+                <Tab eventKey='Other Filters' title='Other Filters'>
                   <div className='table_part'>
                     <table className='table'>
                       <tbody>
@@ -863,8 +723,8 @@ const Order_Part = () => {
                       </tbody>
                     </table>
                   </div>
-                </div>
-              </div>
+                </Tab>
+              </Tabs>
             </div>
           </div>
         </div>

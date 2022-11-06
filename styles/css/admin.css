@@ -1184,7 +1184,20 @@ ul.dropdown-menu li a:hover {
 .Order_pages_tabs .nav .nav-item {
   border: none !important;
 }
+.Order_pages_tabs .tab-content {
+  border: none !important;
+  margin-top: 40px;
+}
+.Order_pages_tabs .nav .nav-item:hover {
+  border: none !important;
+}
+.Order_pages_tabs .nav-tabs .nav-link {
+  border: none !important;
+}
 .Order_pages_tabs .nav-tabs {
+  border-bottom: none !important;
+}
+.Order_pages_tabs .nav-tabs .nav-link {
   border-bottom: none !important;
 }
 .Order_pages_tabs .nav .nav-link.active {
