@@ -121,8 +121,8 @@ body {
 }
 
 .custom_width {
-  max-width: calc(100% - 390px);
-  margin-right: 40px;
+  max-width: calc(100% - 390px) !important;
+  margin-right: 40px !important;
 }
 
 .custome_input .search {
@@ -461,7 +461,6 @@ ul.dropdown-menu li a:hover {
     START nab_bar PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 #nab_bar {
-  padding-left: 318px !important;
   background: #ffffff;
   box-shadow: 0px 7px 12px -5px rgba(0, 0, 0, 0.25);
   padding: 20px 0;
@@ -649,9 +648,6 @@ ul.dropdown-menu li a:hover {
   background: var(--admin_bg2);
 }
 
-#Admin_Banner {
-  padding-left: 318px !important;
-}
 #Admin_Banner .NoticeBoard {
   background: #ffffff;
   box-shadow: 0px 4.69076px 6.56707px rgba(0, 0, 0, 0.056545);
@@ -733,9 +729,7 @@ ul.dropdown-menu li a:hover {
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Total order PART
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
-#Total_order {
-  padding-left: 318px !important;
-}
+
 #Total_order.Admin .Total_order_item {
   background: #ffffff;
   box-shadow: 0px 4.57994px 6.41192px rgba(0, 0, 0, 0.056545);
@@ -1098,12 +1092,13 @@ ul.dropdown-menu li a:hover {
   border-radius: 5px;
 }
 
-#ClientList.Admin .FilterBy .FilterBy_item {
-  margin-right: 20px;
+#ClientList.Admin .FilterBy .FilterBy_item:first-child {
+  margin-right: 20px !important;
+  width: 207px;
 }
 
 #ClientList.Admin .FilterBy .FilterBy_item:last-child {
-  margin-right: 0;
+  margin-right: 20px !important;
 }
 
 #ClientList.Admin .FilterBy h3 {
@@ -1171,6 +1166,17 @@ ul.dropdown-menu li a:hover {
 .Order_pages_tabs {
   margin-top: 40px;
 }
+.Order_pages_tabs .nav .nav-item {
+  border: none !important;
+}
+.Order_pages_tabs .nav-tabs {
+  border-bottom: none !important;
+}
+.Order_pages_tabs .nav .nav-link.active {
+  border: none !important;
+  background: #556ff6;
+  color: #fff;
+}
 
 .Order_pages_tabs .nav-link {
   background: #f5f5f5;
@@ -1219,7 +1225,22 @@ ul.dropdown-menu li a:hover {
   background: none;
   color: var(--admin_bg);
 }
-
+.productData {
+}
+.productData .part_1 {
+  background: #f8f8f8;
+  padding: 20px 20px;
+}
+.productData .part_1 .nav-item a {
+  background: transparent;
+  color: #747474;
+  font-size: 18px;
+  font-weight: 600;
+}
+.productData .part_1 .nav-item a.active {
+  background: transparent;
+  color: #556ff6;
+}
 .product_information {
   background: #f8f8f8;
   border-radius: 10px;

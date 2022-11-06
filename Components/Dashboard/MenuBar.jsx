@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profileImg from "../../Assets/images/profile.png";
-const MenuBar = () => {
+const MenuBar = ({ name }) => {
   return (
     <>
       <nav id='nab_bar'>
@@ -10,7 +10,7 @@ const MenuBar = () => {
             <div className='col-lg-6'>
               <div className='menu_text'>
                 <h1>
-                  <span>Admin Dashboard</span>
+                  <span>{name}</span>
                 </h1>
               </div>
             </div>

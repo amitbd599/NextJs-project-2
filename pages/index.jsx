@@ -9,11 +9,9 @@ const index = () => {
   return (
     <Fragment>
       <MasterLayout>
-        <SideBar />
-        <MenuBar />
         <AdminBanner />
         <TotalLead />
-        <ChartJs />
+        {/* <ChartJs /> */}
       </MasterLayout>
     </Fragment>
   );

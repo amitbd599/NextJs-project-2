@@ -1,7 +1,10 @@
+import MenuBar from "../Components/Dashboard/MenuBar";
+import SideBar from "../Components/Dashboard/SideBar";
+
 const MasterLayout = ({ children }) => {
   return (
     <>
-      <div>Hello</div>
+      <SideBar />
       <div>{children}</div>
     </>
   );
